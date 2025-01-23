@@ -1,6 +1,5 @@
 /*
   	Flaticon icon font: Flaticon
-  	Creation date: 22/02/2020 23:01
   	*/
 
 
@@ -46,3 +45,4 @@
 .flaticon-tap:before { content: "\f107"; }
 .flaticon-vacuum-cleaner:before { content: "\f108"; }
 .flaticon-sprayer:before { content: "\f109"; }
+/* .flaticon-housekeeping:before { content: "\e900"; } */

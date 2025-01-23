@@ -9763,3 +9763,40 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .flaticon-housekeeping {
+      display: inline-block;
+      width: 32px; /* Set the desired width */
+      height: 32px; /* Set the desired height */
+      background-image: url("../images/icons/housekeeping.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: brightness(0) saturate(100%) sepia(0) hue-rotate(60deg) brightness(3); /* Initial yellow color */
+      transition: filter 0.3s ease-in-out;
+      position: relative;
+  }
+  
+  /* Adding before effect */
+  .flaticon-housekeeping:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: yellow; /* A small circle around the icon */
+      transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .flaticon-housekeeping:hover {
+      filter: brightness(0) saturate(100%) sepia(0) hue-rotate(0deg) brightness(3); /* Change to white on hover */
+  }
+  
+  /* Hover effect for before pseudo-element */
+  .flaticon-housekeeping:hover:before {
+      background-color: white; /* Circle changes to white on hover */
+  }
+  
