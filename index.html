@@ -10,6 +10,8 @@
 		<link rel="manifest" href="site.webmanifest">
     
     	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
@@ -21,6 +23,8 @@
 
     	<link rel="stylesheet" href="css/flaticon.css">
     	<link rel="stylesheet" href="css/style.css">
+		
+
   	</head>
 	<body>
 		<!-- Nav-->
@@ -29,13 +33,25 @@
 				<img src="/images/logo/fena-homecare-logo_none-bg.png" style="width: 150px;height: auto;" alt="Fena Home Care">
 				<a class="navbar-brand" href="index.html">Fena<span>Home Care</span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="fa fa-bars"></span> Menu
+					<span class="fa fa-bars"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							  Services
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="bureau_services.html">Bureau Services</a></li>
+							  <li><a class="dropdown-item" href="commercial_cleaning.html">Commercial Cleaning</a></li>
+							  <li><a class="dropdown-item" href="residential_cleaning.html">Residential Cleaning</a></li>
+							  <li><a class="dropdown-item" href="industrial_cleaning.html">Industrial Cleaning</a></li>
+							  <li><a class="dropdown-item" href="specialized_cleaning.html">Specialized Cleaning</a></li>
+							</ul>
+						  </li>
+						  
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 					</ul>
 				</div>
@@ -89,11 +105,10 @@
 												<div class="icon"><span class="fa fa-chevron-down"></span></div>
 													<select name="" id="" class="form-control">
 														<option value="">Select Services</option>
-														<option value="">Home Cleaning</option>
-														<option value="">Office Building Cleaning</option>
-														<option value="">Garden Cleaning</option>
-														<option value="">Hotels/AirBnbs Cleaning</option>
-														<option value="">Schools/Colleges</option>
+														<option value="">Residential Cleaning</option>
+														<option value="">Commercial Cleaning</option>
+														<option value="">Industrial Cleaning</option>
+														<option value="">Specialized Cleaning Services</option>
 														<option value="">Help Bureau Services</option>
 													</select>
 												</div>
@@ -118,7 +133,7 @@
 				<div class="row d-flex no-gutters">
 					<div class="col-md-6 d-flex">
 						<div class="img d-flex align-items-center justify-content-center py-5 py-md-0 lazy-bg" data-bg="images/cleaning-about-us-bg.png" style="background-image: none; margin-left: 100px;">
-							<div class="time-open-wrap">
+							<div class="time-open-wrap "  style="opacity: 0.8;">
 								<div class="desc p-4">
 									<h2>Business Hours</h2>
 									<div class="opening-hours">
@@ -229,14 +244,19 @@
 									<span class="flaticon-workplace"></span>
 							</div>
 							<div class="media-body pl-3">
-								<h3 class="heading">Office Cleaning</h3>
+								<h3 class="heading">Commercial Cleaning</h3>
 								<p>
 									We have got your office floor,
 									walls, roofs, cabinests taken
 									care of as clean as you like
-									them.
+									them: <br>
+									<ol>
+										<li>Office Cleaning</li>
+										<li>Retail Space Cleaning</li>
+										<li>Post-construction cleaning</li>
+									</ol>
 								</p>
-								<p><a href="office_cleaning.html" class="btn-custom">Read more</a></p>
+								<p><a href="commercial_cleaning.html" class="btn-custom">Read more</a></p>
 							</div>
 						</div>
 					</div>
@@ -247,16 +267,52 @@
 									<span class="flaticon-rug"></span>
 							</div>
 							<div class="media-body pl-3">
-								<h3 class="heading">Home Cleaning</h3>
+								<h3 class="heading">Residential Cleaning</h3>
 								<p>
 									From Floors, sofa sets,
 									windows glasses, walls to
-									roofs, we make your home
-									space look adorably clean.
+									roofs, we make your residence
+									space look adorably clean.: <br>
+									<ol>
+										<li>Regular House Cleaning</li>
+										<li>Deep cleaning</li>
+										<li>Move-in / move-out cleaning</li>
+									</ol>
 								</p>
-								<p><a href="home_cleaning.html" class="btn-custom">Read more</a></p>
+								<p><a href="residential_cleaning.html" class="btn-custom">Read more</a></p>
 							</div>
 						</div> 
+					</div>
+
+					<div class="col-md-6 col-lg-4 services ftco-animate">
+						<div class="d-block d-flex">
+							<div class="icon d-flex justify-content-center align-items-center">
+									<span class="flaticon-garden"></span>
+							</div>
+							<div class="media-body pl-3">
+								<h3 class="heading">Specialized Cleaning</h3>
+								<p>
+									We provide expert specialized cleaning 
+									services tailored for various environments and needs.
+								</p>
+								<p><a href="specialized_cleaning.html" class="btn-custom">Read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 services ftco-animate">
+						<div class="d-block d-flex">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-balcony"></span>
+							</div>
+							<div class="media-body pl-3">
+								<h3 class="heading">Industrial Cleaning</h3>
+								<p>
+									We specialize in professional industrial cleaning 
+									to maintain safe and efficient work environments.
+								</p>
+								<p><a href="industrial_cleaning.html" class="btn-custom">Read more</a></p>
+							</div>
+						</div>
 					</div>
 
 					<div class="col-md-6 col-lg-4 services ftco-animate">
@@ -271,47 +327,52 @@
 									visitors feel comfortable and
 									happy to visit next time.
 								</p>
-								<p><a href="hotels_airbnb_cleaning.html" class="btn-custom">Read more</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-4 services ftco-animate">
-						<div class="d-block d-flex">
-							<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-garden"></span>
-							</div>
-							<div class="media-body pl-3">
-								<h3 class="heading">Garden Cleaning</h3>
-								<p>
-									Weeds, dry leanes and papers
-									making you dislike your
-									garden? We’ve got your back.
-									We’re just a call away!
-								</p>
-								<p><a href="garden_cleaning.html" class="btn-custom">Read more</a></p>
-							</div>
-						</div>
-					</div>
-						<div class="col-md-6 col-lg-4 services ftco-animate">
-							<div class="d-block d-flex">
-								<div class="icon d-flex justify-content-center align-items-center">
-									<span class="flaticon-balcony"></span>
-								</div>
-								<div class="media-body pl-3">
-									<h3 class="heading">Schools & Colleges</h3>
-									<p>
-										Your daily activities can be
-										normal again without littered
-										spaces. Give us a call.
-									</p>
-									<p><a href="schools_colleges.html" class="btn-custom">Read more</a></p>
-								</div>
+								<!-- <p><a href="#" class="btn-custom">Read more</a></p> -->
 							</div>
 						</div>
 					</div>
 			</div>
 		</section>
+
+		<section id="why-choose-us" class="py-5 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="section-title">Why Choose Us</h2>
+						<p class="section-subtitle">We are dedicated to providing exceptional home care services with compassion and professionalism.</p>
+					</div>
+				</div>
+				<div class="row text-center mt-4">
+					<div class="col-md-4">
+						<i class="fas fa-users-cog fa-3x text-primary"></i>
+						<h4>Experienced Team</h4>
+						<p>Our staff is trained, skilled, and equipped to handle all types of cleaning tasks.</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fas fa-tools fa-3x text-success"></i>
+						<h4>Customized Solutions</h4>
+						<p>We offer flexible cleaning plans tailored to your specific needs and schedule.</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fas fa-recycle fa-3x text-success"></i>
+						<h4>Eco-Friendly Practices</h4>
+						<p>We use environmentally safe cleaning products to protect your health and the planet.</p>
+					</div>
+				</div>
+				<div class="row text-center mt-4">
+					<div class="col-md-4">
+						<i class="fas fa-tags fa-3x text-warning"></i>
+						<h4>Affordable Rates</h4>
+						<p>We provide competitive pricing without compromising on quality.</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fas fa-star fa-3x text-info"></i>
+						<h4>Satisfaction Guarantee</h4>
+						<p>Your satisfaction is our priority, and we go the extra mile to ensure you’re happy.</p>
+					</div>
+				</div>
+			</div>
+		</section>		
 
 		<section class="ftco-section testimony-section ftco-bg-dark">
 			<div class="container">
@@ -367,7 +428,7 @@
 							</a>
 					<div class="desc w-100 px-4 text-center pt-5 mt-5">
 					<div class="text w-100 mb-3 mt-4">
-						<h2><a href="#">Office Cleaning</a></h2>
+						<h2><a href="#">Commercial Cleaning</a></h2>
 					</div>
 				</div>
 				</div>
@@ -496,7 +557,7 @@
 						</ul>
 					</div>
 					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-						<h2 class="footer-heading">Have a Questions?</h2>
+						<h2 class="footer-heading">Have Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
 								<li><span class="icon fa fa-map-marker"></span><span class="text">Nairobi, Kenya.</span></li>
