@@ -31,26 +31,29 @@
 			<div class="container">
 				<img src="/images/logo/fena-homecare-logo_none-bg.png" style="width: 150px;height: auto;" alt="Fena Home Care">
 				<a class="navbar-brand" href="index.html">Fena<span>Home Care</span></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="fa fa-bars"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" 
+						aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-						<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							  Services
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+							   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Services
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="bureau_services.html">Bureau Services</a></li>
-							  <li><a class="dropdown-item" href="commercial_cleaning.html">Commercial Cleaning</a></li>
-							  <li><a class="dropdown-item" href="residential_cleaning.html">Residential Cleaning</a></li>
-							  <li><a class="dropdown-item" href="industrial_cleaning.html">Industrial Cleaning</a></li>
-							  <li><a class="dropdown-item" href="specialized_cleaning.html">Specialized Cleaning</a></li>
+								<li><a class="dropdown-item" href="bureau_services.html">Bureau Services</a></li>
+								<li><a class="dropdown-item" href="commercial_cleaning.html">Commercial Cleaning</a></li>
+								<li><a class="dropdown-item" href="residential_cleaning.html">Residential Cleaning</a></li>
+								<li><a class="dropdown-item" href="industrial_cleaning.html">Industrial Cleaning</a></li>
+								<li><a class="dropdown-item active" href="specialized_cleaning.html">Specialized Cleaning</a></li>
 							</ul>
-						  </li>
-						  
+						</li>
+						
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 					</ul>
 				</div>
@@ -226,5 +229,12 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
+  <script>
+	$(document).ready(function () {
+		$('.dropdown-toggle').dropdown();
+
+		$('.dropdown').off('mouseenter mouseleave'); 
+	});
+</script>
   </body>
 </html>
